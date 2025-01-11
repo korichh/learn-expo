@@ -1,19 +1,18 @@
-import { Svg, G, Use } from "react-native-svg";
+import { Svg } from "react-native-svg";
 import { icons } from "@/constants/icons";
 
 interface IconProps {
   name: string;
-  width?: number;
-  height?: number;
+  size?: number;
   fill?: string;
 }
 
-export default function Icon({ name, width = 32, height = 32, fill = "#000" }: IconProps) {
+export default function Icon({ name, size = 32, fill = "#000" }: IconProps) {
   return (
     <Svg
       viewBox="0 0 32 32"
-      width={width}
-      height={height}
+      width={size}
+      height={size}
       fill={fill}
     >
       {icons[name]}
