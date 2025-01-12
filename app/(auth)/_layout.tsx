@@ -32,14 +32,14 @@ export const layoutStyles = StyleSheet.create({
   header: {
     marginBottom: "auto",
   },
+  content: {
+    marginBottom: "auto",
+    minHeight: 380
+  },
   logo: {
     width: 72,
     height: 72,
     marginHorizontal: "auto"
-  },
-  content: {
-    marginBottom: "auto",
-    minHeight: 380
   },
   title: {
     color: "#fff",

@@ -13,7 +13,7 @@ interface CustomCheckboxProps {
 
 export default function CustomCheckbox({ isChecked, setIsChecked, defaultColor, checkedColor, size = 24, style = {}, containerStyle = {} }: CustomCheckboxProps) {
   return (
-    <View style={[containerStyle, { overflow: "hidden", backgroundColor: defaultColor, width: size, height: size }]}>
+    <View style={[{ overflow: "hidden", backgroundColor: defaultColor, width: size, height: size }, containerStyle]}>
       <Checkbox
         value={isChecked}
         onValueChange={setIsChecked}

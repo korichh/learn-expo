@@ -9,7 +9,7 @@ interface HeaderProps {
 
 export default function Header({ title, leftItem, rightItem, style }: HeaderProps) {
   return (
-    <View style={[style, styles.container]}>
+    <View style={[styles.container, style]}>
       <View style={[styles.item, { left: 0 }]}>{leftItem}</View>
       <Text style={styles.text}>{title}</Text>
       <View style={[styles.item, { right: 0 }]}>{rightItem}</View>
@@ -22,7 +22,9 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
-    marginVertical: 12
+    height: 50,
+    marginBottom: 16,
+    position: "relative",
   },
   text: {
     color: "#fff",

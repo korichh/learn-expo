@@ -3,7 +3,7 @@ import { Link, useNavigation } from "expo-router";
 import { StyleSheet, ScrollView, View, Text, Image, Pressable, TextInput } from "react-native";
 import * as ImagePicker from 'expo-image-picker';
 import { layoutStyles } from "../_layout";
-import Header from "@/components/auth/Header";
+import Header from "@/components/Header";
 import Icon from "@/components/Icon";
 import { images } from "@/constants/images";
 
